@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Lichess Neo Pieces",
+  "version": "1.0",
+  "description": "Overrides lichess pieces to be Neo theme from chess.com",
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": ["*://*.lichess.org/*"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.lichess.org/*"],
+      "css": ["neo-pieces.css"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "/chess_pieces/bk.png",
+      "48": "/chess_pieces/bk.png",
+      "128": "/chess_pieces/bk.png"
+    }
+  },
+  "icons": {
+    "16": "/chess_pieces/bk.png",
+    "48": "/chess_pieces/bk.png",
+    "128": "/chess_pieces/bk.png"
+  }
+}
