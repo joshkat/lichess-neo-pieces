@@ -2,8 +2,9 @@
   "manifest_version": 3,
   "name": "Lichess Neo Pieces",
   "version": "1.0",
+  "author": "Josh Katayev",
   "description": "Overrides lichess pieces to be Neo theme from chess.com",
-  "permissions": ["activeTab", "scripting"],
+  "permissions": ["activeTab", "scripting", "storage", "nativeMessaging"],
   "host_permissions": ["*://*.lichess.org/*"],
   "content_scripts": [
     {
@@ -12,7 +13,6 @@
     }
   ],
   "action": {
-    "default_popup": "popup.html",
     "default_icon": {
       "16": "/chess_pieces/bk.png",
       "48": "/chess_pieces/bk.png",
